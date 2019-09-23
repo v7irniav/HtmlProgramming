@@ -1,0 +1,26 @@
+div { /* 선택자 또는 셀렉트 */
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+} /*바디 안에 div를 위에 같이 만들어라 */
+#greenDiv { /* #을 주게 되면은 아이디만 적용 되게 선택자가 id이다 */
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: green;
+}
+
+#yellowDiv { /* #을 주게 되면은 아이디만 적용 되게 선택자가 id이다 */
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.group1 { /*그룹1에 해당하는것들은 이것을 적용하라  */
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	background-color: #00ffff;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<!-- Internal style sheet -->
+		<!-- <style type="text/css"> 
+			div{/* 선택자 또는 셀렉트 */
+				border:1px solid black; 
+				width:200px; 
+				height:100px; 
+				background-color:blue;
+			}/*바디 안에 div를 위에 같이 만들어라 */
+			
+			#greenDiv{/* #을 주게 되면은 아이디만 적용 되게 선택자가 id이다 */
+				border:1px solid black; 
+				width:200px; 
+				height:100px; 
+				background-color:green;
+			}
+			
+			#yellowDiv{/* #을 주게 되면은 아이디만 적용 되게 선택자가 id이다 */
+				border:1px solid black; 
+				width:200px; 
+				height:100px; 
+				background-color:yellow;
+			}
+			.group1{/*그룹1에 해당하는것들은 이것을 적용하라  */
+			border:1px solid black; 
+				width:200px; 
+				height:100px; 
+				background-color:#00ffff;
+			}
+		</style>
+		<!--External Style Sheet  html 외부에 스타일을 적용-->
+		<link rel="stylesheet" type="text/css" href="../common/css/style1.css"><!-- rel은 관계  stylesheet는 모양을 관련짓는것-->
+	</head>
+	 
+	
+	<body>
+		<!-- inline style  우선 순위가 높기 때문에 이건 위에 div가 적용되지 않는다.-->
+		<div style="border:1px solid black; width:200px; height:100px; background-color:red;"></div>
+	
+	
+		<div></div>
+		
+		<div id="greenDiv"></div><!--id는 문서 전체에서 유일하게 가지고 있어야 한다.  -->
+		<div id="yellowDiv"></div>
+		
+		<div></div>
+		
+		<!-- 이세가지만 똑같은 색으로 맞추고 싶다 그러므로 그룹으로 묶는다 -->
+		<div class="group1"></div>
+		<div class="group1"></div>
+		<div class="group1"></div>
+	</body>
+</html>

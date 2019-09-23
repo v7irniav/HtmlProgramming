@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Internal style sheet css를 분류해야 되서 이 스타일로 한다-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04_layout</title>
+<style type="text/css">
+* { /*아스타는 모드 테그에 적용하다  */
+	margin: 0px; /*밭깥쪽 여백  */
+	padding: 0px; /*안쪽 내용물의 여백  */
+}
+#wrapper{
+	width:800px;
+	/* width:auto;/*브라우저가 결정해서 사이즈를 조절해 준다  */
+	margin:auto;/*좌우측 여백을 똑같을 주고 중앙으로 배치하겠다 */
+}
+#header {
+	border: 1px solid black;
+	height: 100px;
+	padding: 10px;
+}
+#content {
+	border: 1px solid black;
+	height: 300px;
+	padding-left: 10px;
+	display: flex;/* flex는 유연하게 배치시키겠다라는 뜻 */
+	flex-direction: row;/*횡방향으로 무엇을 추가 하겠다. flex일 경우에나 적용된다. 가로방향은 row 세로 방향은 colum이다*/
+}
+#footer {
+	border: 1px solid black;
+	height: 50px;
+	clear: both;
+}
+#logo {
+	/*헤더라는 테그를 찾아서 안쪽에 있는 로고를 찾아라, #header div헤더 안쪽에 있는 div,  #header .group1 헤더 안쪽에 클래스 그룹1을 찾아라  */
+	width: 100%;
+	height: 80%;
+	border: 1px solid black;
+	background-color: #00ffff;
+}
+
+#mainMenu {
+	width: 100%;
+	height: 20%;
+	border: 1px solid black;
+	background-color: orange;
+}
+#sideBar { /* #content ##sideBar도 가능 */
+	border: 1px solid black;
+	background-color: rgb(158, 227, 132); /*rgb도 넣을수 있다.  */
+	width:150px;/*비율   1/4만큼 차지한다*/ */
+	/*width 의미가 없다  */
+	height: 100%;
+
+}
+#center {
+	border: 1px solid black;
+	background-color: #dddddd;
+	flex-grow:3;/*비율     3/4만큼 차지한다*//*남아있는 공간을 다 차지하기도 한다*/
+	/* width: 100%; */
+	height: 100%;
+	}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<!--전체 내용을 감싸는 div를 하나 만든다 -->
+		<div id="header">
+			<div id="logo"></div>
+			<div id="mainMenu"></div>
+		</div>
+
+		<div id="content">
+			<div id="sideBar"></div>
+			<!--div가 블룩 요소이기 때문에 한행 전체를 차지 한다  -->
+			<div id=center></div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
